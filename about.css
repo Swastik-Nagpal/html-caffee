@@ -1,0 +1,165 @@
+html{
+    margin: none;
+    padding: none;
+}
+
+/* -----HEADER----- */
+
+header{
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    gap: 0.5rem;
+    width: 100vw;
+    height: 5rem;
+    background-color: #9b8974;
+
+    font-family: "Advent Pro", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    box-shadow: 0px 3px 5px rgb(120, 120, 120);
+}
+
+
+header .main-logo{
+    grid-column: span 2;
+    justify-self: center;
+}
+
+header button{
+    font-family: "Advent Pro", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: #FFF
+}
+
+.main-logo > a > img{
+    height: 3rem;
+    margin-right: 3rem;
+    align-self: center;
+}
+
+.nav-left{
+    grid-column-start: 3;
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-right{
+    /* grid-column: span2; */
+    grid-column-end: -1;
+}
+
+.nav button{
+    background: none;
+    border: none;
+}
+
+
+/* -----BODY----- */
+body{
+    background-color: linear-gradient(180deg, #FFF 0%, #FEFEFE 0.01%, #EFE7CD 74.82%, #CCBE94 83.35%, #9B8974 90.43%);
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    padding: none;
+    height:100%;
+
+    font-family: "Advent Pro", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    overflow-x: hidden;    
+}
+
+.content{
+    padding: 5rem;
+    padding-top: 6rem;
+    flex: 1;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+h2{
+    font-weight: 400;
+}
+
+
+h3{
+    font-weight: 300;
+    display: inline;
+}
+
+/* -----FOOTER----- */
+
+footer{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 20px;
+    /* display: none; */
+    background-color: #09343B;
+    margin: 0px;
+    padding: 50px;
+    /* width: 100%; */
+    height: 250px;
+
+    color: #D8EAD2;
+}
+
+footer{
+    font-family: "Advent Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+} 
+.footer-headings{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: normal;
+} 
+
+footer a.small-links{
+    text-decoration: none;
+    color: #D8EAD2;
+    display: block;
+    max-width: fit-content;
+    line-height: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+footer a.small-links:hover{
+    opacity: 50%;
+}
+
+footer .main-logo img{
+    height: 5rem;
+}
+
+footer > #social-media > .footer-svg{
+    height: 1rem;
+    display: inline-block;
+}
+
+footer > #social-media > .footer-svg > svg{
+    height: 1rem;
+    width: 1rem;
+    fill:#D8EAD2;
+    padding-right: 0.5rem;
+}
